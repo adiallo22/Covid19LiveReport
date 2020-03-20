@@ -15,6 +15,7 @@
 		C059455F2423F89D000A03DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C059455D2423F89D000A03DC /* LaunchScreen.storyboard */; };
 		C059456724251DE6000A03DC /* CovidBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456624251DE6000A03DC /* CovidBrain.swift */; };
 		C059456924254025000A03DC /* DataGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456824254025000A03DC /* DataGroup.swift */; };
+		C059456B2425418D000A03DC /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456A2425418D000A03DC /* CovidData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C05945602423F89D000A03DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C059456624251DE6000A03DC /* CovidBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidBrain.swift; sourceTree = "<group>"; };
 		C059456824254025000A03DC /* DataGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroup.swift; sourceTree = "<group>"; };
+		C059456A2425418D000A03DC /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C059456824254025000A03DC /* DataGroup.swift */,
 				C05945582423F89A000A03DC /* Main.storyboard */,
 				C059456624251DE6000A03DC /* CovidBrain.swift */,
+				C059456A2425418D000A03DC /* CovidData.swift */,
 				C059455B2423F89D000A03DC /* Assets.xcassets */,
 				C059455D2423F89D000A03DC /* LaunchScreen.storyboard */,
 				C05945602423F89D000A03DC /* Info.plist */,
@@ -147,6 +150,7 @@
 				C059456724251DE6000A03DC /* CovidBrain.swift in Sources */,
 				C059456924254025000A03DC /* DataGroup.swift in Sources */,
 				C05945572423F89A000A03DC /* ViewController.swift in Sources */,
+				C059456B2425418D000A03DC /* CovidData.swift in Sources */,
 				C05945532423F89A000A03DC /* AppDelegate.swift in Sources */,
 				C05945552423F89A000A03DC /* SceneDelegate.swift in Sources */,
 			);
