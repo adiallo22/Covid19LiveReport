@@ -8,22 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CovidBrainDelegate {
 
     @IBOutlet weak var countryPicker: UIPickerView!
+    
+    var covidBrain = CovidBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         countryPicker.delegate = self
         countryPicker.dataSource = self
+        covidBrain.delegate = self
+    }
+    
+    func failWithError(error: Error) {
+        print(error)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        <#code#>
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return covidBrain.countries.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return covidBrain.countries[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let country = covidBrain.countries[row].prefix(2)
+        covidBrain.returnData(String(country))
     }
 
 }
