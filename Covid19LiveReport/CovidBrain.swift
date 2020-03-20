@@ -9,16 +9,21 @@
 import Foundation
 
 protocol CovidBrainDelegate {
+    
     func failWithError(error: Error)
     func updateData(result: DataGroup, country: String)
+    
 }
+
+
 struct CovidBrain {
     
     var delegate : CovidBrainDelegate?
     
     let baseURL = "https://health-api.com/api/v1/covid-19/"
     
-    let countries = [  "AF: Afghanistan",
+    let countries = [
+       "AF: Afghanistan",
        "AL: Albania",
        "DZ: Algeria",
        "AS: American Samoa",

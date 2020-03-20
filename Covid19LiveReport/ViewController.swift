@@ -25,6 +25,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         print(error)
     }
     
+    func updateData(result: DataGroup, country: String) {
+        print(result.country)
+        print(result.confirmed)
+        print(result.country_code)
+        print(result.deaths)
+        print(result.last_update)
+        print(result.recovered)
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
