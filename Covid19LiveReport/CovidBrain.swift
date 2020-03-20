@@ -10,7 +10,7 @@ import Foundation
 
 protocol CovidBrainDelegate {
     func failWithError(error: Error)
-    //func updateData(result: CovidData, country: String)
+    func updateData(result: DataGroup, country: String)
 }
 struct CovidBrain {
     
@@ -278,11 +278,33 @@ struct CovidBrain {
                     return
                 }
                 if let existData = data {
-                    print(existData)
+                    if let result = self.parseJSON(existData) {
+                        self.delegate?.updateData(result: result, country: country)
+                    }
                 }
-            }.resume()
+            }
+            task.resume()
         }
     }
+    
+    func parseJSON(_ data: Data) -> DataGroup? {
+        let decoder = JSONDecoder()
+        do {
+            let dataDecoded = try decoder.decode(CovidData.self, from: data)
+            let country = dataDecoded.country
+            let confirmed = dataDecoded.confirmed
+            let country_code = dataDecoded.country_code
+            let deaths = dataDecoded.deaths
+            let last_update = dataDecoded.last_update
+            let recovered = dataDecoded.recovered
+            let dataGroup = DataGroup(country: country, last_update: last_update, confirmed: confirmed, deaths: deaths, recovered: recovered, country_code: country_code)
+            return dataGroup
+        } catch {
+            delegate?.failWithError(error: error)
+            return nil
+        }
+    }
+
     
     
 }
