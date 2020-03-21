@@ -302,7 +302,7 @@ struct CovidBrain {
             let deaths = dataDecoded.deaths
             let last_update = dataDecoded.last_update
             let recovered = dataDecoded.recovered
-            let dataGroup = DataGroup(country: country, last_update: last_update, confirmed: confirmed, deaths: deaths, recovered: recovered, country_code: country_code)
+            let dataGroup = DataGroup(country: country, last_update: last_update, confirmed: confirmed, deaths: deaths, recovered: recovered)
             return dataGroup
         } catch {
             delegate?.failWithError(error: error)

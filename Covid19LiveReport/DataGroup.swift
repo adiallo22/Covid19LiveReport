@@ -15,15 +15,15 @@ struct DataGroup {
     var confirmed : Int
     var deaths : Int
     var recovered : Int
-    var country_code : String
+    //var country_code : String
     
-    init(country: String, last_update: Int, confirmed: Int, deaths: Int, recovered: Int, country_code: String) {
+    init(country: String, last_update: Int, confirmed: Int, deaths: Int, recovered: Int) {
         self.country = country
         self.last_update = last_update
         self.confirmed = confirmed
         self.deaths = deaths
         self.recovered = recovered
-        self.country_code = country_code
+        //self.country_code = country_code
     }
     
 }

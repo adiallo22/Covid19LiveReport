@@ -16,6 +16,7 @@
 		C059456724251DE6000A03DC /* CovidBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456624251DE6000A03DC /* CovidBrain.swift */; };
 		C059456924254025000A03DC /* DataGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456824254025000A03DC /* DataGroup.swift */; };
 		C059456B2425418D000A03DC /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456A2425418D000A03DC /* CovidData.swift */; };
+		C059456D2426AEBA000A03DC /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456C2426AEBA000A03DC /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C059456624251DE6000A03DC /* CovidBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidBrain.swift; sourceTree = "<group>"; };
 		C059456824254025000A03DC /* DataGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGroup.swift; sourceTree = "<group>"; };
 		C059456A2425418D000A03DC /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
+		C059456C2426AEBA000A03DC /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +66,10 @@
 			children = (
 				C05945522423F89A000A03DC /* AppDelegate.swift */,
 				C05945542423F89A000A03DC /* SceneDelegate.swift */,
+				C05945582423F89A000A03DC /* Main.storyboard */,
+				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
 				C05945562423F89A000A03DC /* ViewController.swift */,
 				C059456824254025000A03DC /* DataGroup.swift */,
-				C05945582423F89A000A03DC /* Main.storyboard */,
 				C059456624251DE6000A03DC /* CovidBrain.swift */,
 				C059456A2425418D000A03DC /* CovidData.swift */,
 				C059455B2423F89D000A03DC /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C059456D2426AEBA000A03DC /* ChildViewController.swift in Sources */,
 				C059456724251DE6000A03DC /* CovidBrain.swift in Sources */,
 				C059456924254025000A03DC /* DataGroup.swift in Sources */,
 				C05945572423F89A000A03DC /* ViewController.swift in Sources */,

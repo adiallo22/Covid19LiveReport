@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, CovidBrainDelegate {
 
     @IBOutlet weak var countryPicker: UIPickerView!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var infectedLabel: UILabel!
+    @IBOutlet weak var deathsLabel: UILabel!
+    @IBOutlet weak var deathsRate: UILabel!
+    @IBOutlet weak var recoveredLabel: UILabel!
+    @IBOutlet weak var recoveredRateLabel: UILabel!
     
     var covidBrain = CovidBrain()
     
@@ -27,12 +33,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func updateData(result: DataGroup, country: String) {
         DispatchQueue.main.async {
-            print(result.country)
-            print(result.confirmed)
-            print(result.country_code)
-            print(result.deaths)
-            print(result.last_update)
-            print(result.recovered)
+            self.countryLabel.text = result.country.uppercased()
+            self.infectedLabel.text = "\(result.confirmed)"
+            self.deathsLabel.text = "\(result.deaths)"
+            self.deathsRate.text = "\(String(format: "%.2f", Double(result.deaths) / Double(result.confirmed)*100.0))%"
+            self.recoveredLabel.text = "\(result.recovered)"
+            self.recoveredRateLabel.text = "\(String(format: "%.2f", Double(result.recovered) / Double(result.confirmed)*100.0))%"
         }
     }
     
@@ -51,6 +57,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let country = covidBrain.countries[row].prefix(2)
         covidBrain.returnData(String(country))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToChild" {
+            let destinationVC = segue.destination as! ChildViewController
+        }
     }
 
 }
