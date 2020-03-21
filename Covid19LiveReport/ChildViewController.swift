@@ -9,22 +9,19 @@
 import UIKit
 
 class ChildViewController: UIViewController {
+    
+    @IBOutlet weak var countryLab: UILabel!
+    @IBOutlet weak var infectedLab: UILabel!
+    @IBOutlet weak var deathLab: UILabel!
+    @IBOutlet weak var deathRateLab: UILabel!
+    @IBOutlet weak var recoveryLab: UILabel!
+    @IBOutlet weak var recoveryRateLab: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

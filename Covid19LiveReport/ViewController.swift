@@ -11,12 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var countryPicker: UIPickerView!
-    @IBOutlet weak var countryLabel: UILabel!
-    @IBOutlet weak var infectedLabel: UILabel!
-    @IBOutlet weak var deathsLabel: UILabel!
-    @IBOutlet weak var deathsRate: UILabel!
-    @IBOutlet weak var recoveredLabel: UILabel!
-    @IBOutlet weak var recoveredRateLabel: UILabel!
+    var destVC : ChildViewController? = nil
     
     enum Segues {
         static let goToData = "goToChild"
@@ -33,7 +28,8 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.goToData {
-            let destinationVC = segue.destination as! ChildViewController
+            destVC = segue.destination as! ChildViewController
+            destVC?.view.backgroundColor = .yellow
         }
     }
     
@@ -73,12 +69,12 @@ extension ViewController : CovidBrainDelegate {
     
     func updateData(result: DataGroup, country: String) {
         DispatchQueue.main.async {
-            self.countryLabel.text = result.country.uppercased()
-            self.infectedLabel.text = "\(result.confirmed)"
-            self.deathsLabel.text = "\(result.deaths)"
-            self.deathsRate.text = "\(String(format: "%.2f", Double(result.deaths) / Double(result.confirmed)*100.0))%"
-            self.recoveredLabel.text = "\(result.recovered)"
-            self.recoveredRateLabel.text = "\(String(format: "%.2f", Double(result.recovered) / Double(result.confirmed)*100.0))%"
+            self.destVC?.countryLab.text = result.country.uppercased()
+            self.destVC?.infectedLab.text = "\(result.confirmed)"
+            self.destVC?.deathLab.text = "\(result.deaths)"
+            self.destVC?.deathRateLab.text = "\(String(format: "%.2f", Double(result.deaths) / Double(result.confirmed)*100.0))%"
+            self.destVC?.recoveryLab.text = "\(result.recovered)"
+            self.destVC?.recoveryRateLab.text = "\(String(format: "%.2f", Double(result.recovered) / Double(result.confirmed)*100.0))%"
         }
     }
     
