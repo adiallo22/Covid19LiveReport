@@ -45,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C041C1862426CAAD006E9B6C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C059456824254025000A03DC /* DataGroup.swift */,
+				C059456624251DE6000A03DC /* CovidBrain.swift */,
+				C059456A2425418D000A03DC /* CovidData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C041C1872426CAC0006E9B6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
+				C05945562423F89A000A03DC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C05945462423F89A000A03DC = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +85,9 @@
 			children = (
 				C05945522423F89A000A03DC /* AppDelegate.swift */,
 				C05945542423F89A000A03DC /* SceneDelegate.swift */,
+				C041C1862426CAAD006E9B6C /* Model */,
 				C05945582423F89A000A03DC /* Main.storyboard */,
-				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
-				C05945562423F89A000A03DC /* ViewController.swift */,
-				C059456824254025000A03DC /* DataGroup.swift */,
-				C059456624251DE6000A03DC /* CovidBrain.swift */,
-				C059456A2425418D000A03DC /* CovidData.swift */,
+				C041C1872426CAC0006E9B6C /* Controllers */,
 				C059455B2423F89D000A03DC /* Assets.xcassets */,
 				C059455D2423F89D000A03DC /* LaunchScreen.storyboard */,
 				C05945602423F89D000A03DC /* Info.plist */,
