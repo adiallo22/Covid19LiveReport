@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.goToData {
             destVC = segue.destination as! ChildViewController
-            destVC?.view.backgroundColor = .yellow
+            destVC?.view.backgroundColor = .white
         }
     }
     
