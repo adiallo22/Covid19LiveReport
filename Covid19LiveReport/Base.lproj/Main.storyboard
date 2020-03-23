@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HQ-Uc-NZq">
-                                <rect key="frame" x="272" y="814" width="79" height="48"/>
+                                <rect key="frame" x="287" y="814" width="79" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -47,16 +47,16 @@
                                     <segue destination="oD5-CZ-DgV" kind="presentation" identifier="goToFAQ" id="uCm-Og-yLz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjd-is-haS">
-                                <rect key="frame" x="68" y="814" width="76" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlj-01-91N">
+                                <rect key="frame" x="49" y="814" width="79" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="More">
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="MORE">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="w0a-0g-XEp" kind="presentation" identifier="goToMore" id="Flo-Gq-KdT"/>
+                                    <segue destination="w0a-0g-XEp" kind="presentation" identifier="goToMore" id="7eh-YK-x0b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,20 +245,34 @@
             </objects>
             <point key="canvasLocation" x="-630.43478260869574" y="145.98214285714286"/>
         </scene>
-        <!--More View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="rdM-gW-lu1">
             <objects>
-                <viewController id="w0a-0g-XEp" customClass="MoreViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w0a-0g-XEp" customClass="DetailsViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Yd-vO-Ggy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BPc-ZO-PYo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="TXP-Ew-agd"/>
                     </view>
+                    <connections>
+                        <outlet property="DetailsWebPage" destination="BPc-ZO-PYo" id="VQ9-AZ-uXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3T-jZ-byC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="404"/>
+            <point key="canvasLocation" x="924.63768115942037" y="403.79464285714283"/>
         </scene>
     </scenes>
     <resources>

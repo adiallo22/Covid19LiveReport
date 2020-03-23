@@ -1,5 +1,5 @@
 //
-//  MoreViewController.swift
+//  DetailsViewController.swift
 //  Covid19LiveReport
 //
 //  Created by Abdul Diallo on 3/23/20.
@@ -9,17 +9,20 @@
 import UIKit
 import WebKit
 
-class MoreViewController: UIViewController {
+class DetailsViewController: UIViewController {
 
-    @IBOutlet weak var moreWebPage: WKWebView!
+    @IBOutlet weak var DetailsWebPage: WKWebView!
     
     private let url = URL(string: "https://www.worldometers.info/coronavirus/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let theURL = url {
-            moreWebPage.load(URLRequest(url: theURL))
+            DetailsWebPage.load(URLRequest(url: theURL))
         }
+        
     }
+    
 
 }

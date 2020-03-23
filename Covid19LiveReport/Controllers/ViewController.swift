@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         }
         
         if segue.identifier == Segues.goToMore {
-            _ = segue.destination as! MoreViewController
+            _ = segue.destination as! DetailsViewController
         }
     }
     
