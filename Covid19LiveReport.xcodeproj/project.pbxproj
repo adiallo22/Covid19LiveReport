@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C041C1892426D746006E9B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041C1882426D746006E9B6C /* Images.xcassets */; };
+		C041C18B24293C27006E9B6C /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041C18A24293C27006E9B6C /* FAQViewController.swift */; };
 		C05945532423F89A000A03DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05945522423F89A000A03DC /* AppDelegate.swift */; };
 		C05945552423F89A000A03DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05945542423F89A000A03DC /* SceneDelegate.swift */; };
 		C05945572423F89A000A03DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05945562423F89A000A03DC /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C041C1882426D746006E9B6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C041C18A24293C27006E9B6C /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C059454F2423F89A000A03DC /* Covid19LiveReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19LiveReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05945522423F89A000A03DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C05945542423F89A000A03DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
 				C05945562423F89A000A03DC /* ViewController.swift */,
+				C041C18A24293C27006E9B6C /* FAQViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C059456D2426AEBA000A03DC /* ChildViewController.swift in Sources */,
+				C041C18B24293C27006E9B6C /* FAQViewController.swift in Sources */,
 				C059456724251DE6000A03DC /* CovidBrain.swift in Sources */,
 				C059456924254025000A03DC /* DataGroup.swift in Sources */,
 				C05945572423F89A000A03DC /* ViewController.swift in Sources */,
