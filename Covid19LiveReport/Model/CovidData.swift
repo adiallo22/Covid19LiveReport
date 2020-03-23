@@ -15,6 +15,6 @@ struct CovidData : Codable {
     var confirmed : Int
     var deaths : Int
     var recovered : Int
-    var country_code : String
+    //var country_code : String
     
 }

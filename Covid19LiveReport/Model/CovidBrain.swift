@@ -297,7 +297,7 @@ struct CovidBrain {
             let dataDecoded = try decoder.decode(CovidData.self, from: data)
             let country = dataDecoded.country
             let confirmed = dataDecoded.confirmed
-            let country_code = dataDecoded.country_code
+            //let country_code = dataDecoded.country_code
             let deaths = dataDecoded.deaths
             let last_update = dataDecoded.last_update
             let recovered = dataDecoded.recovered

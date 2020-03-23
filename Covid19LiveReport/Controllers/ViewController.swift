@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.goToData {
             destVC = segue.destination as! ChildViewController
-            destVC?.view.backgroundColor = .white
         }
     }
     
@@ -49,7 +48,9 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return covidBrain.countries[row]
+        let title = covidBrain.countries[row]
+        let start = title.index(title.startIndex, offsetBy: 3)
+        return String(title[start...])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

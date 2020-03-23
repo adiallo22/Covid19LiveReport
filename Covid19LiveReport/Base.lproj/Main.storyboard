@@ -10,14 +10,15 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Covid19LiveReport" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qor-eo-neG">
-                                <rect key="frame" x="20" y="0.0" width="374" height="438"/>
+                                <rect key="frame" x="20" y="78" width="374" height="385"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                             </pickerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-sA-VQ2">
@@ -55,7 +56,7 @@
         <!--Child View Controller-->
         <scene sceneID="I0F-jl-FQ7">
             <objects>
-                <viewController id="qxt-Me-Qbl" customClass="ChildViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qxt-Me-Qbl" customClass="ChildViewController" customModule="Covid19LiveReport" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MfP-0w-rXM">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="356"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +171,7 @@
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Iug-9Q-gxu"/>
                     </view>
                     <connections>
