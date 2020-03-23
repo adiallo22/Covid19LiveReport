@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     enum Segues {
         static let goToData = "goToChild"
         static let goToFAQ = "goToFAQ"
+        static let goToMore = "goToMore"
     }
     
     var covidBrain = CovidBrain()
@@ -33,7 +34,11 @@ class ViewController: UIViewController {
         }
         
         if segue.identifier == Segues.goToFAQ {
-            let destinationVC = segue.destination as! FAQViewController
+            _ = segue.destination as! FAQViewController
+        }
+        
+        if segue.identifier == Segues.goToMore {
+            _ = segue.destination as! MoreViewController
         }
     }
     

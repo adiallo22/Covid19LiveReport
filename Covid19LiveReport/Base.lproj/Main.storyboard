@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HQ-Uc-NZq">
-                                <rect key="frame" x="146" y="822" width="122" height="40"/>
+                                <rect key="frame" x="272" y="814" width="79" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -45,6 +45,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="oD5-CZ-DgV" kind="presentation" identifier="goToFAQ" id="uCm-Og-yLz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjd-is-haS">
+                                <rect key="frame" x="68" y="814" width="76" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="More">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="w0a-0g-XEp" kind="presentation" identifier="goToMore" id="Flo-Gq-KdT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DE2-DY-Zdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002.8985507246377" y="126.5625"/>
+            <point key="canvasLocation" x="925" y="-244"/>
         </scene>
         <!--Child View Controller-->
         <scene sceneID="I0F-jl-FQ7">
@@ -232,6 +244,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="foG-0L-ydR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-630.43478260869574" y="145.98214285714286"/>
+        </scene>
+        <!--More View Controller-->
+        <scene sceneID="rdM-gW-lu1">
+            <objects>
+                <viewController id="w0a-0g-XEp" customClass="MoreViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Yd-vO-Ggy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TXP-Ew-agd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3T-jZ-byC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="404"/>
         </scene>
     </scenes>
     <resources>
