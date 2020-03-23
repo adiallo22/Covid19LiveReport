@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import WebKit
 
 class FAQViewController: UIViewController {
 
+    @IBOutlet weak var FAQWebPage: WKWebView!
+    
+    private let url = URL(string: "https://www.cdc.gov/coronavirus/2019-ncov/faq.html")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let theURL = url {
+            FAQWebPage.load(URLRequest(url: theURL))
+        }
+        
     }
     
 

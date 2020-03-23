@@ -72,13 +72,32 @@
                     <view key="view" contentMode="scaleToFill" id="74s-LE-QGM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7H2-hA-AL7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7H2-hA-AL7" secondAttribute="bottom" id="0lH-Nu-LsY"/>
+                            <constraint firstItem="7H2-hA-AL7" firstAttribute="leading" secondItem="Yro-9P-UJb" secondAttribute="leading" id="HfF-B5-Pkc"/>
+                            <constraint firstItem="7H2-hA-AL7" firstAttribute="top" secondItem="Yro-9P-UJb" secondAttribute="top" id="OiW-W9-rKO"/>
+                            <constraint firstItem="7H2-hA-AL7" firstAttribute="trailing" secondItem="Yro-9P-UJb" secondAttribute="trailing" id="acB-Ao-WQO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Yro-9P-UJb"/>
                     </view>
+                    <connections>
+                        <outlet property="FAQWebPage" destination="7H2-hA-AL7" id="nYq-Uv-uqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DE2-DY-Zdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="127"/>
+            <point key="canvasLocation" x="1002.8985507246377" y="126.5625"/>
         </scene>
         <!--Child View Controller-->
         <scene sceneID="I0F-jl-FQ7">
