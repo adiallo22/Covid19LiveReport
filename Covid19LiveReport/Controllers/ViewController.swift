@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     enum Segues {
         static let goToData = "goToChild"
+        static let goToFAQ = "goToFAQ"
     }
     
     var covidBrain = CovidBrain()
@@ -29,6 +30,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Segues.goToData {
             destVC = segue.destination as! ChildViewController
+        }
+        
+        if segue.identifier == Segues.goToFAQ {
+            let destinationVC = segue.destination as! FAQViewController
         }
     }
     

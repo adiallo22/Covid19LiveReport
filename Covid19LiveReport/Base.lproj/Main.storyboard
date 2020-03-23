@@ -44,7 +44,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oD5-CZ-DgV" kind="presentation" id="uCm-Og-yLz"/>
+                                    <segue destination="oD5-CZ-DgV" kind="presentation" identifier="goToFAQ" id="uCm-Og-yLz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,7 +68,7 @@
         <!--View Controller-->
         <scene sceneID="T5S-Vs-2Xs">
             <objects>
-                <viewController id="oD5-CZ-DgV" sceneMemberID="viewController">
+                <viewController id="oD5-CZ-DgV" customClass="FAQViewController" customModule="Covid19LiveReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="74s-LE-QGM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

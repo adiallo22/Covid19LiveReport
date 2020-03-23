@@ -60,8 +60,8 @@
 		C041C1872426CAC0006E9B6C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
 				C05945562423F89A000A03DC /* ViewController.swift */,
+				C059456C2426AEBA000A03DC /* ChildViewController.swift */,
 				C041C18A24293C27006E9B6C /* FAQViewController.swift */,
 			);
 			path = Controllers;
