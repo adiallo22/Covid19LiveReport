@@ -8,5 +8,7 @@ target 'Covid19LiveReport' do
   # Pods for Covid19LiveReport
 
 pod 'Firebase/Analytics'
+pod 'Firebase'
+pod 'Firebase/Messaging'
 
 end

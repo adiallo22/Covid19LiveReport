@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3295E2F47888E4373360FC1C /* Pods_Covid19LiveReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3EB86706EDE3ED02F69301 /* Pods_Covid19LiveReport.framework */; };
 		C03DAA76242C472600FD780E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03DAA75242C472600FD780E /* GoogleService-Info.plist */; };
+		C03DAA7D242D4C1C00FD780E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03DAA7C242D4C1C00FD780E /* NotificationCenter.framework */; };
+		C03DAA80242D4C1C00FD780E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DAA7F242D4C1C00FD780E /* TodayViewController.swift */; };
+		C03DAA83242D4C1C00FD780E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03DAA81242D4C1C00FD780E /* MainInterface.storyboard */; };
+		C03DAA87242D4C1C00FD780E /* QuickCovidReport.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C03DAA7B242D4C1C00FD780E /* QuickCovidReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C041C1892426D746006E9B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041C1882426D746006E9B6C /* Images.xcassets */; };
 		C041C18B24293C27006E9B6C /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041C18A24293C27006E9B6C /* FAQViewController.swift */; };
 		C041C18F2429791E006E9B6C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041C18E2429791E006E9B6C /* DetailsViewController.swift */; };
@@ -23,9 +27,38 @@
 		C059456D2426AEBA000A03DC /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C059456C2426AEBA000A03DC /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C03DAA85242D4C1C00FD780E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05945472423F89A000A03DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C03DAA7A242D4C1C00FD780E;
+			remoteInfo = QuickCovidReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C03DAA88242D4C1C00FD780E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C03DAA87242D4C1C00FD780E /* QuickCovidReport.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B31B816508E191634CB05F14 /* Pods-Covid19LiveReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19LiveReport.release.xcconfig"; path = "Target Support Files/Pods-Covid19LiveReport/Pods-Covid19LiveReport.release.xcconfig"; sourceTree = "<group>"; };
 		C03DAA75242C472600FD780E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C03DAA7B242D4C1C00FD780E /* QuickCovidReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickCovidReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03DAA7C242D4C1C00FD780E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C03DAA7F242D4C1C00FD780E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C03DAA82242D4C1C00FD780E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C03DAA84242D4C1C00FD780E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C041C1882426D746006E9B6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C041C18A24293C27006E9B6C /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C041C18E2429791E006E9B6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +78,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C03DAA78242D4C1C00FD780E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03DAA7D242D4C1C00FD780E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C059454C2423F89A000A03DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,8 +110,19 @@
 			isa = PBXGroup;
 			children = (
 				CC3EB86706EDE3ED02F69301 /* Pods_Covid19LiveReport.framework */,
+				C03DAA7C242D4C1C00FD780E /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C03DAA7E242D4C1C00FD780E /* QuickCovidReport */ = {
+			isa = PBXGroup;
+			children = (
+				C03DAA7F242D4C1C00FD780E /* TodayViewController.swift */,
+				C03DAA81242D4C1C00FD780E /* MainInterface.storyboard */,
+				C03DAA84242D4C1C00FD780E /* Info.plist */,
+			);
+			path = QuickCovidReport;
 			sourceTree = "<group>";
 		};
 		C041C1862426CAAD006E9B6C /* Model */ = {
@@ -98,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C05945512423F89A000A03DC /* Covid19LiveReport */,
+				C03DAA7E242D4C1C00FD780E /* QuickCovidReport */,
 				C05945502423F89A000A03DC /* Products */,
 				5F7827F7055B1E76B390F7F7 /* Pods */,
 				9E788DFB904D43AB1BC5C8B8 /* Frameworks */,
@@ -108,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C059454F2423F89A000A03DC /* Covid19LiveReport.app */,
+				C03DAA7B242D4C1C00FD780E /* QuickCovidReport.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +185,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C03DAA7A242D4C1C00FD780E /* QuickCovidReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C03DAA8B242D4C1C00FD780E /* Build configuration list for PBXNativeTarget "QuickCovidReport" */;
+			buildPhases = (
+				C03DAA77242D4C1C00FD780E /* Sources */,
+				C03DAA78242D4C1C00FD780E /* Frameworks */,
+				C03DAA79242D4C1C00FD780E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCovidReport;
+			productName = QuickCovidReport;
+			productReference = C03DAA7B242D4C1C00FD780E /* QuickCovidReport.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C059454E2423F89A000A03DC /* Covid19LiveReport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C05945632423F89D000A03DC /* Build configuration list for PBXNativeTarget "Covid19LiveReport" */;
@@ -140,10 +211,12 @@
 				C059454C2423F89A000A03DC /* Frameworks */,
 				C059454D2423F89A000A03DC /* Resources */,
 				6673B107E452DE78CFB7C5D8 /* [CP] Embed Pods Frameworks */,
+				C03DAA88242D4C1C00FD780E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C03DAA86242D4C1C00FD780E /* PBXTargetDependency */,
 			);
 			name = Covid19LiveReport;
 			productName = Covid19LiveReport;
@@ -160,6 +233,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Abdul Diallo";
 				TargetAttributes = {
+					C03DAA7A242D4C1C00FD780E = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					C059454E2423F89A000A03DC = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -179,11 +255,20 @@
 			projectRoot = "";
 			targets = (
 				C059454E2423F89A000A03DC /* Covid19LiveReport */,
+				C03DAA7A242D4C1C00FD780E /* QuickCovidReport */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C03DAA79242D4C1C00FD780E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03DAA83242D4C1C00FD780E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C059454D2423F89A000A03DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,6 +325,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C03DAA77242D4C1C00FD780E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03DAA80242D4C1C00FD780E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C059454B2423F89A000A03DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,7 +351,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C03DAA86242D4C1C00FD780E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C03DAA7A242D4C1C00FD780E /* QuickCovidReport */;
+			targetProxy = C03DAA85242D4C1C00FD780E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		C03DAA81242D4C1C00FD780E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C03DAA82242D4C1C00FD780E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C05945582423F89A000A03DC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +387,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C03DAA89242D4C1C00FD780E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZNY957A2G6;
+				INFOPLIST_FILE = QuickCovidReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abdulCo.Covid19LiveReport.QuickCovidReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C03DAA8A242D4C1C00FD780E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZNY957A2G6;
+				INFOPLIST_FILE = QuickCovidReport/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abdulCo.Covid19LiveReport.QuickCovidReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C05945612423F89D000A03DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6650D26C7ECE0200F186C97 /* Pods-Covid19LiveReport.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
@@ -415,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B31B816508E191634CB05F14 /* Pods-Covid19LiveReport.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
@@ -433,6 +582,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C03DAA8B242D4C1C00FD780E /* Build configuration list for PBXNativeTarget "QuickCovidReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C03DAA89242D4C1C00FD780E /* Debug */,
+				C03DAA8A242D4C1C00FD780E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C059454A2423F89A000A03DC /* Build configuration list for PBXProject "Covid19LiveReport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
