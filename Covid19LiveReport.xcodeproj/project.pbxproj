@@ -59,6 +59,8 @@
 		C03DAA7F242D4C1C00FD780E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		C03DAA82242D4C1C00FD780E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		C03DAA84242D4C1C00FD780E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03DAA8C242D4C9A00FD780E /* Covid19LiveReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Covid19LiveReport.entitlements; sourceTree = "<group>"; };
+		C03DAA8F242D558500FD780E /* QuickCovidReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickCovidReport.entitlements; sourceTree = "<group>"; };
 		C041C1882426D746006E9B6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C041C18A24293C27006E9B6C /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C041C18E2429791E006E9B6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		C03DAA7E242D4C1C00FD780E /* QuickCovidReport */ = {
 			isa = PBXGroup;
 			children = (
+				C03DAA8F242D558500FD780E /* QuickCovidReport.entitlements */,
 				C03DAA7F242D4C1C00FD780E /* TodayViewController.swift */,
 				C03DAA81242D4C1C00FD780E /* MainInterface.storyboard */,
 				C03DAA84242D4C1C00FD780E /* Info.plist */,
@@ -169,6 +172,7 @@
 		C05945512423F89A000A03DC /* Covid19LiveReport */ = {
 			isa = PBXGroup;
 			children = (
+				C03DAA8C242D4C9A00FD780E /* Covid19LiveReport.entitlements */,
 				C03DAA75242C472600FD780E /* GoogleService-Info.plist */,
 				C05945522423F89A000A03DC /* AppDelegate.swift */,
 				C05945542423F89A000A03DC /* SceneDelegate.swift */,
@@ -390,6 +394,7 @@
 		C03DAA89242D4C1C00FD780E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QuickCovidReport/QuickCovidReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
 				INFOPLIST_FILE = QuickCovidReport/Info.plist;
@@ -409,6 +414,7 @@
 		C03DAA8A242D4C1C00FD780E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QuickCovidReport/QuickCovidReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
 				INFOPLIST_FILE = QuickCovidReport/Info.plist;
@@ -545,6 +551,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Covid19LiveReport/Covid19LiveReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
 				INFOPLIST_FILE = Covid19LiveReport/Info.plist;
@@ -565,6 +572,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Covid19LiveReport/Covid19LiveReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNY957A2G6;
 				INFOPLIST_FILE = Covid19LiveReport/Info.plist;

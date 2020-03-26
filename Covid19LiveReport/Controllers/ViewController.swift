@@ -81,6 +81,7 @@ extension ViewController : CovidBrainDelegate {
     func updateData(result: DataGroup, country: String) {
         DispatchQueue.main.async {
             self.destVC?.countryLab.text = result.country.uppercased()
+            UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.setValue(self.destVC?.countryLab.text, forKey: "country")
             self.destVC?.infectedLab.text = "\(result.confirmed)"
             self.destVC?.deathLab.text = "\(result.deaths)"
             self.destVC?.deathRateLab.text = "\(String(format: "%.2f", Double(result.deaths) / Double(result.confirmed)*100.0))%"

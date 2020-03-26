@@ -10,10 +10,14 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    @IBOutlet weak var countryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        if let country = UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.value(forKey: "country") {
+            countryLabel.text = country as? String
+        }
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
