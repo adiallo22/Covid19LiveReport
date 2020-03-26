@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3295E2F47888E4373360FC1C /* Pods_Covid19LiveReport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3EB86706EDE3ED02F69301 /* Pods_Covid19LiveReport.framework */; };
+		C03DAA76242C472600FD780E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03DAA75242C472600FD780E /* GoogleService-Info.plist */; };
 		C041C1892426D746006E9B6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041C1882426D746006E9B6C /* Images.xcassets */; };
 		C041C18B24293C27006E9B6C /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041C18A24293C27006E9B6C /* FAQViewController.swift */; };
 		C041C18F2429791E006E9B6C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041C18E2429791E006E9B6C /* DetailsViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		B31B816508E191634CB05F14 /* Pods-Covid19LiveReport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid19LiveReport.release.xcconfig"; path = "Target Support Files/Pods-Covid19LiveReport/Pods-Covid19LiveReport.release.xcconfig"; sourceTree = "<group>"; };
+		C03DAA75242C472600FD780E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C041C1882426D746006E9B6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C041C18A24293C27006E9B6C /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		C041C18E2429791E006E9B6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +62,6 @@
 				C6650D26C7ECE0200F186C97 /* Pods-Covid19LiveReport.debug.xcconfig */,
 				B31B816508E191634CB05F14 /* Pods-Covid19LiveReport.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +115,7 @@
 		C05945512423F89A000A03DC /* Covid19LiveReport */ = {
 			isa = PBXGroup;
 			children = (
+				C03DAA75242C472600FD780E /* GoogleService-Info.plist */,
 				C05945522423F89A000A03DC /* AppDelegate.swift */,
 				C05945542423F89A000A03DC /* SceneDelegate.swift */,
 				C041C1862426CAAD006E9B6C /* Model */,
@@ -187,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C041C1892426D746006E9B6C /* Images.xcassets in Resources */,
+				C03DAA76242C472600FD780E /* GoogleService-Info.plist in Resources */,
 				C059455F2423F89D000A03DC /* LaunchScreen.storyboard in Resources */,
 				C059455A2423F89A000A03DC /* Main.storyboard in Resources */,
 			);
