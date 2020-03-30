@@ -14,6 +14,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var infectedLabel: UILabel!
     @IBOutlet weak var deadLabel: UILabel!
+    @IBOutlet weak var recoveryLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
         if let dead = UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.value(forKey: "dead") {
             deadLabel.text = dead as? String
+        }
+        if let recovered = UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.value(forKey: "recovery") {
+            recoveryLabel.text = recovered as? String
         }
     }
         

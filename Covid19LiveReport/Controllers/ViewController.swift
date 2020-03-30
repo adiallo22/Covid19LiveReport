@@ -92,7 +92,7 @@ extension ViewController : CovidBrainDelegate {
             self.destVC?.deathRateLab.text = "\(String(format: "%.2f", Double(result.deaths) / Double(result.confirmed)*100.0))%"
             
             self.destVC?.recoveryLab.text = "\(result.recovered)"
-            //UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.setValue(self.destVC?.recoveryLab.text, forKey: "recovery")
+            UserDefaults.init(suiteName: "group.com.abdulCo.widget")?.setValue(self.destVC?.recoveryLab.text, forKey: "recovery")
             
             self.destVC?.recoveryRateLab.text = "\(String(format: "%.2f", Double(result.recovered) / Double(result.confirmed)*100.0))%"
         }
